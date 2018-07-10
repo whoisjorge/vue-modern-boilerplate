@@ -63,8 +63,8 @@ module.exports = {
         background: app.backgroundColor,
         persistentCache: false,
         inject: false,
-        logo: './public/icons/favicon.svg',
-        prefix: 'icons/',
+        logo: './public/img/icons/favicon.svg',
+        prefix: 'img/icons/',
         icons: {
           favicons: true,
           android: true,
