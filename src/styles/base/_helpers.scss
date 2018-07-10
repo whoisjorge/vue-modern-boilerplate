@@ -1,0 +1,27 @@
+/*  Helper utility classes
+ * ------------------------------------------------------------ */
+
+.--is-visually-hidden {
+  border: 0;
+  clip: rect(.1rem,.1rem,.1rem,.1rem);
+  height: .1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: .1rem;
+}
+
+.--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.--is-disabled {
+  display: none;
+  visibility: hidden;
+}

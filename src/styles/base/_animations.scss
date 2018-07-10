@@ -1,0 +1,22 @@
+/*  Animations
+* ------------------------------------------------------------ */
+
+@import '../vendor/animate';
+.animated {
+  animation-duration: .850s;
+}
+
+/*  Simple vue transitions
+ * ------------------------------------------------------------ */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+.fade-in-enter, .fade-in-leave-to {
+  opacity: 0
+}
