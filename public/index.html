@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -8,9 +8,9 @@
     <title><%= htmlWebpackPlugin.options.app.title %></title>
     <meta name="description" content="<%= htmlWebpackPlugin.options.app.description %>">
     <meta name="keywords" content="<%= htmlWebpackPlugin.options.app.keywords %>">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
-    <!-- Custom. -->
+    <!-- Misc. -->
+    <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
 
@@ -25,9 +25,9 @@
     <meta name="twitter:creator" content="<%= htmlWebpackPlugin.options.app.twitterUser %>">
 
     <!-- PWA support (missing meta managed by: @vue/cli-plugin-pwa) -->
-    <meta name="robots" content="index, follow">
-    <meta name="msapplication-tap-highlight" content="no">
     <meta name="msapplication-config" content="<%= BASE_URL %>browserconfig.xml">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192"  href="<%= BASE_URL %>img/icons/android-chrome-192x192.png">
   </head>
   <body>
