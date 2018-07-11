@@ -1,6 +1,6 @@
 {
   "name": "Vue Modern Boilerplate",
-  "short_name": "APP_NAME",
+  "short_name": "12_CHARACTERS_MAX",
   "icons": [
     {
       "src": "/img/icons/android-chrome-36x36.png",
