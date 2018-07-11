@@ -3,12 +3,16 @@
 
 @import '../vendor/normalize';
 
-:root {
-  font-size: 62.5%;
-}
+:root { font-size: 62.5% }
+::selection { background: rgba(27, 141, 29, 0.1) }
+::-webkit-scrollbar { display: none }
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
   background-color: $color--white;
 }
 
