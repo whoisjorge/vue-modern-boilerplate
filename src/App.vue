@@ -29,9 +29,26 @@ export default {
 // @import '~bootstrap/dist/css/bootstrap.css';
 @import '@/styles/main.scss';
 
+html, body {
+  height: 100%
+}
+
 #application {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.15rem;
   color: #2c3e50;
   text-align: center;
   padding: 8px;
+}
+
+// https://helpx.adobe.com/typekit/using/font-events.html
+html, .wf-loading {
+  visibility: hidden !important;
+  opacity: 0;
+}
+.wf-active, .wf-inactive {
+  visibility: visible !important;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 </style>

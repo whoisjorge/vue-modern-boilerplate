@@ -24,6 +24,9 @@ export default {
 <style lang="scss">
 .home {
   margin-top: 60px;
+  h1 {
+    font-family: 'Inconsolata';
+  }
   a {
     &:hover {
       text-decoration: none
