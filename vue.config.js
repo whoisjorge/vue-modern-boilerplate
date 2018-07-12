@@ -1,7 +1,7 @@
 const app = require('./src/app.config')
 
 /**
- * Extend Vue & Webpack configuration
+ * Extend Vue & Webpack configuration.
  * https://cli.vuejs.org/config/
  */
 
@@ -9,7 +9,7 @@ module.exports = {
   productionSourceMap: false,
 
   /**
-   * Pass options to the PWA Plugin.
+   * Pass some options to the PWA Plugin. See what is configured by default:
    * https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
    */
   pwa: {
@@ -21,7 +21,7 @@ module.exports = {
   },
 
   /**
-   * Passing options to Pre-Processor loaders
+   * Pass settings to Pre-Processor loaders.
    * https://cli.vuejs.org/guide/css.html#passing-options-to-pre-processor-loaders
    */
   css: {
@@ -37,7 +37,7 @@ module.exports = {
   configureWebpack: config => {
     // config.resolve.alias.appConfig = path.resolve(__dirname, './src')
     if (process.env.NODE_ENV === 'production') {
-      // Remove any comment inside compiled JS files
+      // Remove comments inside compiled JS files.
       config.optimization.minimizer[0].options.uglifyOptions.output.comments = false
     }
   },
@@ -51,13 +51,13 @@ module.exports = {
     })
 
     if (process.env.NODE_ENV === 'production') {
-      // Remove any comment inside compiled CSS files
+      // Remove comments inside compiled CSS files.
       config.plugin('optimize-css').tap(args => {
         args[0].cssProcessorOptions = { discardComments: { removeAll: true } }
         return args
       })
         .end()
-      // Let webpack generate all the project favicons and icons
+      // Let webpack generate all the project favicons and icons.
       // https://github.com/jantimon/favicons-webpack-plugin
       config.plugin('favicons').use(require('favicons-webpack-plugin'), [{
         background: app.backgroundColor,

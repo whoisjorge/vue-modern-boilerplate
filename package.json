@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "inspect:dev": "vue inspect > inspect-output-DEV.js",
-    "inspect:prod": "vue inspect --mode production > inspect-output-PROD.js",
+    "inspect:dev": "vue inspect > output-dev.js",
+    "inspect:prod": "vue inspect --mode production > output-prod.js",
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -27,10 +27,10 @@
     "@vue/cli-service": "^3.0.0-beta.15",
     "@vue/eslint-config-standard": "^3.0.0-rc.3",
     "favicons-webpack-plugin": "0.0.9",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.0.3",
     "vue-template-compiler": "^2.5.16"
   },
   "browserslist": [
