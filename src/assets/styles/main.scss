@@ -1,13 +1,10 @@
-@charset "UTF-8";
-
 // Configuration
 @import 'settings';
 
 // Base styles
 @import
   'base/animations',
-  'base/fonts',
-  'base/general',
-  'base/helpers';
+  'base/helpers',
+  'base/general';
 
 // components, etc.

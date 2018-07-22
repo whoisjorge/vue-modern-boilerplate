@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   // App-specific Metadata
   name: 'APP_NAME',

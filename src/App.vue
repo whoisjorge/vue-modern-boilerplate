@@ -27,18 +27,18 @@ export default {
 
 <style lang="scss">
 // @import '~bootstrap/dist/css/bootstrap.css';
-@import '@/styles/main.scss';
+@import '@/assets/styles/main.scss';
 
 html, body {
-  height: 100%
+  height: 100%;
+  width: 100vw;
+  color: $color--black;
+  background: $color--white;
 }
 
 #application {
-  font-family: 'Overpass', sans-serif;
-  font-size: 1.15rem;
-  color: #2c3e50;
   text-align: center;
-  padding: 8px;
+  font-family: 'Overpass', sans-serif;
 }
 
 // https://helpx.adobe.com/typekit/using/font-events.html
