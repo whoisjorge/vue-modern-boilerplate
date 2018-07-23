@@ -77,6 +77,12 @@ module.exports = {
         }
       }])
         .end()
+      // Enhances 'html-webpack-plugin' with different deployment options for the scripts
+      // https://github.com/numical/script-ext-html-webpack-plugin
+      config.plugin('deferJS').use(require('script-ext-html-webpack-plugin'), [{
+        defaultAttribute: 'defer'
+      }])
+        .end()
     } else {
       // mutate for development...
     }

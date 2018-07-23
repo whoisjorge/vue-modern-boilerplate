@@ -9,7 +9,7 @@ import Router from 'vue-router'
 // https://github.com/declandewet/vue-meta
 import VueMeta from 'vue-meta'
 
-// Routes of the application
+// Routes of the application.
 import routes from './routes'
 
 Vue.use(Router)
