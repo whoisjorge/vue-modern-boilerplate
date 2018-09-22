@@ -17,7 +17,7 @@ export default {
       meta: [
         { property: 'og:url', content: process.env.VUE_APP_DOMAIN + this.$route.path }
       ],
-      links: [
+      link: [
         { rel: 'canonical', href: process.env.VUE_APP_DOMAIN + this.$route.path }
       ]
     }
