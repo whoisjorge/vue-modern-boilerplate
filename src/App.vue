@@ -8,6 +8,7 @@
 import app from '@/app.config'
 
 export default {
+  name: 'application',
   head() {
     return {
       htmlAttrs: {
@@ -18,6 +19,7 @@ export default {
         { property: 'og:url', content: process.env.VUE_APP_DOMAIN + this.$route.path }
       ],
       link: [
+        { rel: 'home', href: process.env.VUE_APP_DOMAIN },
         { rel: 'canonical', href: process.env.VUE_APP_DOMAIN + this.$route.path }
       ]
     }
