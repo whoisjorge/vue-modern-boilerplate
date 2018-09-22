@@ -5,12 +5,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import modules from './modules'
+import global from './modules/global'
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-  modules
+  modules: {
+    global
+  }
 })
 
 export default store

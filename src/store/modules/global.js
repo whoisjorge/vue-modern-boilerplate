@@ -4,15 +4,15 @@ const state = {
   loaded: false
 }
 
-const getters = {
-  isLoaded: state => {
-    return state.loaded
-  }
-}
-
 const mutations = {
   [types.SET_LOADING] (state, loadedState) {
     state.loaded = loadedState
+  }
+}
+
+const getters = {
+  isLoaded: state => {
+    return state.loaded
   }
 }
 

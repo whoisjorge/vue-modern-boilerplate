@@ -10,7 +10,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "assets-loader": "^0.5.2",
     "connect-history-api-fallback": "^1.5.0",
     "element-ui": "^2.4.7",
     "gsap": "^2.0.2",
@@ -31,6 +30,7 @@
     "@vue/cli-plugin-pwa": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "@vue/eslint-config-standard": "^3.0.3",
+    "assets-loader": "^0.5.2",
     "favicons-webpack-plugin": "0.0.9",
     "node-sass": "^4.9.3",
     "pug": "^2.0.3",
