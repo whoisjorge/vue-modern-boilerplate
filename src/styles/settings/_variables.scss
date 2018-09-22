@@ -1,9 +1,16 @@
-/*  Variables
+/*  Project Variables
  * ------------------------------------------------------------ */
+
+// Fonts
+$font: 'Overpass', sans-serif;
 
 // Colors
 $color--black: #333;
 $color--gray: #eee;
 $color--white: #fafafa;
-
 $color--test: red;
+
+// Responsive
+$tablet: 1024px;
+$mobile: 768px;
+$small-mobile: 400px;

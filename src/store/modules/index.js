@@ -1,9 +1,10 @@
-// Code from: https://github.com/chrisvfritz/vue-enterprise-boilerplate
-
 /**
  * Register each file as a corresponding Vuex module. Module nesting
  * will mirror [sub-]directory hierarchy and modules are namespaced
  * as the camelCase equivalent of their file name.
+ *
+ * Credits: https://github.com/chrisvfritz/vue-enterprise-boilerplate
+ *
  */
 
 import camelCase from 'lodash/camelCase'

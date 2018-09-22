@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss">
 // @import '~bootstrap/dist/css/bootstrap.css';
-@import '@/assets/styles/main.scss';
+@import '@/styles/main.scss';
 
 html, body {
   height: 100%;
@@ -40,7 +40,7 @@ html, body {
 
 #application {
   text-align: center;
-  font-family: 'Overpass', sans-serif;
+  font-family: $font;
 }
 
 // https://helpx.adobe.com/typekit/using/font-events.html
