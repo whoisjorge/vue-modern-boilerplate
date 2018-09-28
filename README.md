@@ -3,9 +3,9 @@
 
 [![vue-modern-boilerplate](media/header.gif)](README.md)
 
-A tweak-friendly starter project skeleton to build [Vue.js](https://vuejs.org) single page apps or sites. Created through [Vue CLI 3](https://cli.vuejs.org/) and built on top of [webpack](https://webpack.github.io/), it uses modern JavaScript syntax with [ES6](https://github.com/lukehoban/es6features) features via [babel](https://babeljs.io/) to start integrating the best tools in the **front-end ecosystem**.
+A tweak-friendly starter project skeleton to build [Vue.js](https://vuejs.org) single page apps or sites. Created through [Vue CLI 3](https://cli.vuejs.org/) and built on top of [webpack](https://webpack.github.io/), it uses modern JavaScript syntax with [ES6](https://github.com/lukehoban/es6features) features via [babel](https://babeljs.io/) to start integrating the best tools in the **frontend ecosystem**.
 
-**Note:** _This is just my personal vue.js starter boilerplate, it may not be a good approach for your project(s)._
+**Note:** _This is a personal vue.js starter boilerplate, it may not be a good approach for your project(s)._
 
 ## Development experience
 
@@ -58,9 +58,7 @@ yarn inspect:prod
 # see: https://cli.vuejs.org/guide/cli-service.html
 ```
 
----
-
-Update the following files to suit your application before building for production:
+**Remember** to update the following files to suit your application before building for production:
 
 - `.env` and `app.config.js`
 - `/public/` directory
