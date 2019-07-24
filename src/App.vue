@@ -1,14 +1,87 @@
 <template lang="pug">
   #application
-    transition(name='fade' mode='out-in')
-      router-view(:key="$route.fullPath")
+    Loader
+    router-view(:key="$route.fullPath")
 </template>
 
 <script>
 import app from '@/app.config'
 
+import assetsLoader from 'assets-loader'
+import Loader from './components/core/Loader'
+
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'application',
+
+  components: {
+    Loader
+  },
+
+  data () {
+    return {
+      minTimer: false,
+      progress: null
+    }
+  },
+
+  computed: {
+    ...mapGetters([
+      'isLoaded'
+    ])
+  },
+
+  beforeMount () {
+    // Let it 5" before store commiting.
+    var that = this
+    setTimeout(function () {
+      that.minTimer = true
+      if (that.progress >= 0.95) {
+        that.$store.commit('SET_LOADING', true)
+      }
+    }, 5000)
+    /**
+     * A simple batch assets loader.
+     */
+    // var loader = assetsLoader({
+    //   assets: [
+    //     // 'public/data.json',
+    //     '/test/test.jpg'
+    //   ]
+    // })
+    //   .on('error', function (error) {
+    //     console.log(error)
+    //   })
+    //   .on('progress', function (progress) {
+    //     that.progress = progress
+    //     console.log((progress * 100).toFixed() + '%')
+    //   })
+    //   .on('complete', function (assets) {
+    //     if (that.minTimer) {
+    //       that.$store.commit('SET_LOADING', true)
+    //     }
+    //   })
+    //   .start()
+  },
+
+  // mounted () {
+  //   var loader = assetsLoader({
+  //     assets: [
+  //       '/test/test.jpg'
+  //     ]
+  //   })
+  //   .on('error', function (error) {
+  //     console.log(error)
+  //   })
+  //   .on('progress', function (progress) {
+  //     // console.log((progress * 100).toFixed() + '%')
+  //   })
+  //   .on('complete', function (assets) {
+  //   })
+  //   .start()
+  // },
+
   head() {
     return {
       htmlAttrs: {
@@ -39,8 +112,8 @@ html, body {
 }
 
 #application {
-  text-align: center;
   font-family: $font;
+  text-align: center;
 }
 
 // https://helpx.adobe.com/typekit/using/font-events.html
