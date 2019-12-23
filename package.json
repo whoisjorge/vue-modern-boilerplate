@@ -1,7 +1,12 @@
 {
   "name": "vue-modern-boilerplate",
   "version": "0.0.1",
+  "description": "Frontend development environment for fresh Vue SPA projects",
   "private": true,
+  "engines": {
+    "node": ">=12.13.1",
+    "yarn": ">=1.0.0"
+  },
   "scripts": {
     "inspect:dev": "vue inspect > output-dev.js",
     "inspect:prod": "vue inspect --mode production > output-prod.js",
@@ -38,15 +43,5 @@
     "sass-loader": "^7.1.0",
     "script-ext-html-webpack-plugin": "^2.0.1",
     "vue-template-compiler": "^2.5.17"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 4 versions",
-    "not ie <= 8"
-  ],
-  "engines": {
-    "node": ">=8.9.0",
-    "npm": ">=5.6.0",
-    "yarn": ">=1.0.0"
   }
 }
